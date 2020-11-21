@@ -5,7 +5,7 @@ html {
   min-height: 140vh;
 }
 
-header {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +22,7 @@ header {
   border-bottom: 1px solid #e2e2e2;
 }
 
-header div {
+nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,29 +37,29 @@ header div {
           flex: 1;
 }
 
-header div.header-icons {
+nav div.header-icons {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-header div.header-btns {
+nav div.header-btns {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-header a {
+nav a {
   font-size: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-header a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-header .menu-icon, header .search-icon {
+nav .menu-icon, nav .search-icon {
   width: 16px;
   height: 16px;
   padding: 8px 9px 9px;
@@ -69,20 +69,20 @@ header .menu-icon, header .search-icon {
   transition: 300ms;
 }
 
-header .menu-icon:hover, header .search-icon:hover {
+nav .menu-icon:hover, nav .search-icon:hover {
   background-color: #f7f7f7;
 }
 
-header .search-icon {
+nav .search-icon {
   margin-right: 16px;
 }
 
-header .main-logo {
+nav .main-logo {
   width: 190px;
   height: 25px;
 }
 
-header .header-btns button {
+nav .header-btns button {
   padding: 11px 12px 8px;
   background-color: #567b95;
   text-transform: uppercase;
@@ -93,7 +93,30 @@ header .header-btns button {
   border-radius: 3px;
 }
 
-header .header-btns button:first-child {
+nav .header-btns button:first-child {
   margin-right: 6px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 42px;
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header h1 {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

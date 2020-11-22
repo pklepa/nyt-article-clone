@@ -104,17 +104,33 @@ main {
   padding-top: 42px;
 }
 
-main header {
+main article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  padding: 60px;
 }
 
-main header h1 {
-  font-size: 30px;
+main article header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main article header > h1 {
+  display: block;
+  margin: 0 auto 16px;
+  width: 600px;
+  line-height: 1.2em;
+  font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 700;

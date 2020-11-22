@@ -80,12 +80,24 @@ main
     display: flex
     padding-top: 42px
 
-    header
+    article
         display: flex
         align-items: center
+        width: 100%
+        padding: 60px
 
-        h1
-            font-size: 30px
-            font-family: 'Times New Roman', Times, serif
-            font-style: italic
-            font-weight: 700
+        header
+            display: flex
+            align-items: center
+            width: 100%
+
+            & > h1
+                display: block
+                margin: 0 auto 16px
+                width: 600px
+
+                line-height: 1.2em
+                font-size: 40px
+                font-family: 'Times New Roman', Times, serif
+                font-style: italic
+                font-weight: 700

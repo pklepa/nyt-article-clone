@@ -108,14 +108,19 @@ main article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   padding: 60px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-main article header {
+main article header.main-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +130,7 @@ main article header {
   width: 100%;
 }
 
-main article header > h1 {
+main article header.main-header > h1 {
   display: block;
   margin: 0 auto 16px;
   width: 600px;
@@ -134,5 +139,147 @@ main article header > h1 {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 700;
+}
+
+main article figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px auto 43px;
+}
+
+main article figure > img {
+  width: 1200px;
+}
+
+main article figure > figcaption {
+  margin: 10px 20px 0 0;
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #666;
+}
+
+main article figure > figcaption > span {
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+}
+
+main article header.secondary-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 600px;
+}
+
+main article header.secondary-header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+main article header.secondary-header p span {
+  -webkit-text-decoration: underline silver;
+          text-decoration: underline silver;
+  cursor: pointer;
+}
+
+main article header.secondary-header p span:hover {
+  text-decoration: none;
+}
+
+main article header.secondary-header > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main article header.secondary-header > div time {
+  color: #333333;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main article header.secondary-header > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main article header.secondary-header > div ul li:not(:last-child) {
+  margin-right: 16px;
+}
+
+main article header.secondary-header > div ul li:not(.toolbar-icon) svg:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+main article header.secondary-header > div ul li.toolbar-icon svg {
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+}
+
+main article header.secondary-header > div ul li.toolbar-icon svg:hover {
+  background-color: transparent;
+  border-color: #ccc;
+  cursor: pointer;
+}
+
+main article header.secondary-header > div ul li i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: transparent;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  width: auto;
+  min-width: 26px;
+  min-height: 14px;
+  padding: 4px;
+}
+
+main article header.secondary-header > div ul li i::before {
+  position: absolute;
+  display: block;
+  border-color: #666666 transparent;
+  border-style: solid;
+  border-width: 6px 0px 0px 8px;
+  content: "";
+  width: 0px;
+  bottom: -7px;
+  left: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

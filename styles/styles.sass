@@ -133,6 +133,7 @@ main
             align-items: flex-start
             justify-content: flex-start
             width: 600px
+            margin-bottom: 25px
 
             p
                 font-family: Arial, Helvetica, sans-serif
@@ -152,6 +153,7 @@ main
                 width: 100%
                 display: flex
                 justify-content: space-between
+                align-items: center
 
                 time
                     color: #333333
@@ -203,10 +205,9 @@ main
 
                         & > span
                             color: rgb(0, 0, 0)
-                            font-size: 0.75rem
+                            font-size: 1em
                             font-family: Arial, Helvetica, sans-serif
-                            line-height: 0.75rem
-                            margin-top: auto
+                            line-height: 1em
 
                             &::before
                                 position: absolute
@@ -221,7 +222,7 @@ main
                                 bottom: -7px
                                 left: 15px
 
-                            &:::after
+                            &::after
                                 position: absolute
                                 display: block
 
@@ -233,3 +234,46 @@ main
                                 bottom: -6px
                                 content: ""
                                 left: 16px
+
+section
+    display: flex
+    flex-direction: column
+
+    width: 600px
+
+    p
+        font-size: 21.5px
+        line-height: 1.3em
+        margin-bottom: 16px
+        a
+            color: $blue
+            text-decoration: underline
+
+    strong
+        font-weight: bold
+.advert
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 15px
+    font-weight: bold
+
+    margin: 10px 0 26px
+
+    .divider
+        width: 72px
+        border-bottom: 1px solid #ccc
+
+    .divider-top
+        margin-bottom: 16px
+
+    .divider-bottom
+        margin-top: 16px
+
+    span
+        color: $black
+
+    a
+        color: $blue
+        text-decoration: none

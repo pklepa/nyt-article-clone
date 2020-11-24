@@ -141,7 +141,7 @@ main article header.main-header > h1 {
   font-weight: 700;
 }
 
-main article figure {
+main article figure.cover-figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,11 +152,11 @@ main article figure {
   margin: 10px auto 43px;
 }
 
-main article figure > img {
+main article figure.cover-figure > img {
   width: 1200px;
 }
 
-main article figure > figcaption {
+main article figure.cover-figure > figcaption {
   margin: 10px 20px 0 0;
   max-width: 850px;
   font-size: 16px;
@@ -164,7 +164,7 @@ main article figure > figcaption {
   color: #666;
 }
 
-main article figure > figcaption > span {
+main article figure.cover-figure > figcaption > span {
   letter-spacing: 0.01em;
   font-size: 14px;
   font-weight: 500;

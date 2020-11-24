@@ -251,6 +251,25 @@ section
 
     strong
         font-weight: bold
+
+    .video-player
+        display: flex
+        flex-direction: column
+
+        width: 100%
+        margin: 30px 0
+
+        > p
+            margin: 10px 0
+            font-size: 17px
+            color: #666
+            line-height: 1.3em
+
+            > span
+                display: inline
+                color: #888
+                font-size: 15px
+
 .advert
     display: flex
     flex-direction: column
@@ -282,6 +301,7 @@ section
     display: flex
     width: auto
     width: 950px
+    margin-bottom: 50px
 
     h1
         font-size: 20px
@@ -347,3 +367,12 @@ section
         .image-text-8
             top: 73.4375%
             left: 76.5982%
+
+    > .divider
+        width: 60px
+        border-bottom: 2px solid $black
+        margin: 24px 0 13px
+
+    > span
+        font-size: 14px
+        font-family: Arial, Helvetica, sans-serif

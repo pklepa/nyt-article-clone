@@ -17,6 +17,7 @@ nav {
           align-items: center;
   width: 100%;
   position: fixed;
+  z-index: 999;
   background-color: #fff;
   padding: 4px 15px;
   border-bottom: 1px solid #e2e2e2;
@@ -234,22 +235,22 @@ main article header.secondary-header > div time {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main article header.secondary-header > div ul {
+.toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main article header.secondary-header > div ul li:not(:last-child) {
+.toolbar li:not(:last-child) {
   margin-right: 16px;
 }
 
-main article header.secondary-header > div ul li:not(.toolbar-icon) svg:hover {
+.toolbar li:not(.toolbar-icon) svg:hover {
   opacity: 0.3;
   cursor: pointer;
 }
 
-main article header.secondary-header > div ul li.toolbar-icon svg {
+.toolbar li.toolbar-icon svg {
   background-color: #eee;
   border: 1px solid #eee;
   border-radius: 50%;
@@ -258,20 +259,20 @@ main article header.secondary-header > div ul li.toolbar-icon svg {
   padding: 5px;
 }
 
-main article header.secondary-header > div ul li.toolbar-icon svg:hover {
+.toolbar li.toolbar-icon svg:hover {
   background-color: transparent;
   border-color: #ccc;
   cursor: pointer;
 }
 
-main article header.secondary-header > div ul li.toolbar-comments {
+.toolbar li.toolbar-comments {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
 }
 
-main article header.secondary-header > div ul li.toolbar-comments i {
+.toolbar li.toolbar-comments i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,14 +292,14 @@ main article header.secondary-header > div ul li.toolbar-comments i {
   padding: 4px;
 }
 
-main article header.secondary-header > div ul li.toolbar-comments i > span {
+.toolbar li.toolbar-comments i > span {
   color: black;
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1em;
 }
 
-main article header.secondary-header > div ul li.toolbar-comments i > span::before {
+.toolbar li.toolbar-comments i > span::before {
   position: absolute;
   display: block;
   border-color: #666666 transparent;
@@ -310,7 +311,7 @@ main article header.secondary-header > div ul li.toolbar-comments i > span::befo
   left: 15px;
 }
 
-main article header.secondary-header > div ul li.toolbar-comments i > span::after {
+.toolbar li.toolbar-comments i > span::after {
   position: absolute;
   display: block;
   border-color: white transparent;
@@ -511,5 +512,52 @@ section .video-player > p > span {
 .grid-display > span {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.footnote > p {
+  color: #666666;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -.1 px;
+  margin: 12px 0 36px;
+}
+
+.footnote > p > a {
+  color: #666;
+}
+
+.footnote > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footnote > div button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 11px 12px 8px;
+  background-color: #567b95;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .5px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.footnote > div > .toolbar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -105,12 +105,12 @@ main
                 font-style: italic
                 font-weight: 700
 
-        figure.cover-figure
+        figure
             display: flex
             flex-direction: column
             margin: 10px auto 43px
 
-            & > img
+            > img.cover-img
                 width: 1200px
 
             & > figcaption
@@ -126,6 +126,14 @@ main
                     font-size: 14px
                     font-weight: 500
                     color: #888888
+
+        figure.mid-article-fig
+            > img
+                width: 720px
+
+            > figcaption
+                width: 720px
+                padding-right: 20px
 
         header.secondary-header
             display: flex

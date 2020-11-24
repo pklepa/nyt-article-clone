@@ -141,7 +141,7 @@ main article header.main-header > h1 {
   font-weight: 700;
 }
 
-main article figure.cover-figure {
+main article figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,11 +152,11 @@ main article figure.cover-figure {
   margin: 10px auto 43px;
 }
 
-main article figure.cover-figure > img {
+main article figure > img.cover-img {
   width: 1200px;
 }
 
-main article figure.cover-figure > figcaption {
+main article figure > figcaption {
   margin: 10px 20px 0 0;
   max-width: 850px;
   font-size: 16px;
@@ -164,11 +164,20 @@ main article figure.cover-figure > figcaption {
   color: #666;
 }
 
-main article figure.cover-figure > figcaption > span {
+main article figure > figcaption > span {
   letter-spacing: 0.01em;
   font-size: 14px;
   font-weight: 500;
   color: #888888;
+}
+
+main article figure.mid-article-fig > img {
+  width: 720px;
+}
+
+main article figure.mid-article-fig > figcaption {
+  width: 720px;
+  padding-right: 20px;
 }
 
 main article header.secondary-header {

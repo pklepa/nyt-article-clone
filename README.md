@@ -3,6 +3,10 @@
 
 > See it live on [https://pklepa.github.io/nyt-article-clone/](https://pklepa.github.io/nyt-article-clone/)
 
+# screenshots
+![image](https://user-images.githubusercontent.com/22618438/102663861-8ac5d000-4179-11eb-9fe6-edcc77d2c3e3.png)
+
+
 # objectives
 The main objective of this project is to familiarize and apply the following:
 - Practice the syntax of SASS
